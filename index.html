@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Una dedicatoria mágica con Flor Galaxy en un universo de estrellas y pétalos flotantes." />
+  <title>Flor Galaxy 💜 Una Dedicatoria Especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <canvas id="main-canvas"></canvas>
+
+  <div id="app">
+
+    <div id="welcome-screen">
+      <p class="tagline">✦ Feliz Dia de las Madres 10-05-26 ✦</p>
+      <h1 class="welcome-title">Para ti,<br><span>con todo mi amor</span></h1>
+
+      <div id="flower-wrap">
+        <canvas id="flower-canvas"></canvas>
+        <div id="flower-pulse-ring"></div>
+        <div id="flower-pulse-ring2"></div>
+      </div>
+
+      <p class="tap-hint">Toca la flor para abrir tu dedicatoria</p>
+
+      <button id="btn-open" class="btn-primary" type="button">
+        🌸 Abrir mi dedicatoria
+      </button>
+    </div>
+
+    <div id="letter-screen">
+      <header class="letter-header">
+        <div class="mini-flower-wrap">
+          <canvas id="mini-flower-canvas"></canvas>
+        </div>
+        <h2 class="letter-title">Para mi mamita mas bella</h2>
+        <p class="letter-date">✦ Hoy, para ti ✦</p>
+      </header>
+
+      <div id="music-bar" role="button" tabindex="0" aria-label="Reproducir música"
+           onkeydown="if(event.key==='Enter'||event.key===' ')this.click()">
+        <span id="music-icon" class="music-icon paused">🎵</span>
+        <span class="music-text">Música para ti</span>
+        <div id="music-waves" class="music-waves paused">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <article class="letter-card">
+        <div class="cosmos-dots" aria-hidden="true">✦ ✦ ✦</div>
+
+        <p class="letter-greeting">Para ti, amor mío,</p>
+
+        <div class="divider"><span>🌸</span></div>
+
+        <p class="letter-body">
+          Hay momentos en la vida que no necesitan de grandes palabras para
+          ser eternos. Basta con una mirada, una sonrisa, o sentir tu presencia
+          cerca para saber que todo tiene sentido.
+        </p>
+
+        <p class="letter-body">
+          Quiero que sepas que cada día contigo es un regalo que atesoro con
+          todo mi ser. En tus ojos encuentro el universo más hermoso, y en tu
+          risa, la melodía más dulce que jamás he escuchado.
+        </p>
+
+        <div class="divider"><span>💜</span></div>
+
+        <p class="letter-body">
+          Gracias por estar aquí, por elegirme cada día, por ser la flor más
+          hermosa de mi jardín. Cada pétalo morado que cae del cielo te lo
+          dedico a ti, porque mereces todo lo mágico que existe en este mundo.
+        </p>
+
+        <p class="letter-body">
+          Te amo hoy, mañana y siempre. 🌸
+        </p>
+
+        <div class="divider"><span>✨</span></div>
+
+        <p class="letter-signature">Con todo mi amor,<br><em>Tu Gordo 💜</em></p>
+
+        <div class="cosmos-dots" aria-hidden="true">✦ ✦ ✦</div>
+      </article>
+
+      <button id="btn-back" class="btn-back" type="button">← Volver al universo</button>
+    </div>
+
+  </div>
+
+  <!-- ✅ preload="auto" para que cargue el archivo antes de reproducir -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
